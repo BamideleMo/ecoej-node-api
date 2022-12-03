@@ -1,0 +1,43 @@
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "Kabir",
+    "password": "5678",
+    "first_name": "Mark",
+    "middle_name": "Sule",
+    "last_name": "Fisha",
+    "category": "student"
+}
+
+###
+GET http://localhost:3000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjMsInVzZXJuYW1lIjoiS2FiaXIiLCJmaXJzdF9uYW1lIjoiTWFyayIsIm1pZGRsZV9uYW1lIjoiU3VsZSIsImxhc3RfbmFtZSI6IkZpc2hhIiwiY2F0ZWdvcnkiOiJzdHVkZW50IiwiY3JlYXRlZF9hdCI6IjIwMjItMTItMDJUMTY6Mjk6MDQuMDAwWiIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAyVDE2OjI5OjA0LjAwMFoifSwiaWF0IjoxNjcwMDE2OTQ0LCJleHAiOjE2NzAwMjA1NDR9.6G0rXi5g8qwmDOH2Ar3HXeDPptkYylyoqtVO7Hd9oL4
+
+###
+GET http://localhost:3000/api/users/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjMsInVzZXJuYW1lIjoiS2FiaXIiLCJmaXJzdF9uYW1lIjoiTWFyayIsIm1pZGRsZV9uYW1lIjoiU3VsZSIsImxhc3RfbmFtZSI6IkZpc2hhIiwiY2F0ZWdvcnkiOiJzdHVkZW50IiwiY3JlYXRlZF9hdCI6IjIwMjItMTItMDJUMTY6Mjk6MDQuMDAwWiIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAyVDE2OjI5OjA0LjAwMFoifSwiaWF0IjoxNjcwMDE2OTQ0LCJleHAiOjE2NzAwMjA1NDR9.6G0rXi5g8qwmDOH2Ar3HXeDPptkYylyoqtVO7Hd9oL4
+
+###
+PATCH http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOnsiaWQiOjMsInVzZXJuYW1lIjoiS2FiaXIiLCJmaXJzdF9uYW1lIjoiTWFyayIsIm1pZGRsZV9uYW1lIjoiU3VsZSIsImxhc3RfbmFtZSI6IkZpc2hhIiwiY2F0ZWdvcnkiOiJzdHVkZW50IiwiY3JlYXRlZF9hdCI6IjIwMjItMTItMDJUMTY6Mjk6MDQuMDAwWiIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAyVDE2OjI5OjA0LjAwMFoifSwiaWF0IjoxNjcwMDE2OTQ0LCJleHAiOjE2NzAwMjA1NDR9.6G0rXi5g8qwmDOH2Ar3HXeDPptkYylyoqtVO7Hd9oL4
+
+{   
+    "id": "1",
+    "username": "Solomon",
+    "first_name": "Charity",
+    "middle_name": "Abu",
+    "last_name": "Mustaoha",
+    "category": "student"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "username": "Kabir",
+    "password": "5678"
+}
